@@ -1,0 +1,9 @@
+<h1>CLASS : <%=@classes.name %></h1>
+
+<% collegestudentclass = @classes.student_classes %>
+<% collegestudentclass.each do |cc| %>
+    <p>student id: <%= cc.student.id %> <br> Name: <%= cc.student.name %> <br> Email: <%=cc.student.email %> </p>
+    <br></br>
+
+<% end %>
+

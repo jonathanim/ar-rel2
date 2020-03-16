@@ -1,0 +1,18 @@
+<h1>Student</h1>
+
+<p>id: <%= @student.id %></p>
+<p>name <%= @student.name %></p>
+<p>email <%= @student.email %></p>
+
+<h2>Classes</h2>
+
+<ul>
+    <% college_class = @student.college_classes %>
+    <% college_class.each do |c| %>
+        <li><a href="/classes/<%= c.id %>"><%= c.name %></a></li>
+    <% end %>
+</ul>
+
+
+
+
